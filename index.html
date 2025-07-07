@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daan Uriel Quiroz Meza - Portafolio Profesional</title>
+    <!-- Enlace a Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Color de fondo suave */
+            color: #334155; /* Color de texto principal */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Estilos personalizados para secciones */
+        section {
+            padding: 4rem 0;
+        }
+        section:nth-child(even) {
+            background-color: #f1f5f9; /* Color de fondo alterno para secciones */
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #3b82f6; /* Azul de Tailwind */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb; /* Azul más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Barra de Navegación -->
+    <nav class="bg-white shadow-lg py-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 rounded-lg p-2 hover:bg-blue-50">Daan Uriel Quiroz Meza</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-lg p-2 hover:bg-blue-50">Inicio</a>
+                <a href="#experiencia" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-lg p-2 hover:bg-blue-50">Experiencia</a>
+                <a href="#educacion" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-lg p-2 hover:bg-blue-50">Educación</a>
+                <a href="#habilidades" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-lg p-2 hover:bg-blue-50">Habilidades</a>
+                <a href="#proyectos" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-lg p-2 hover:bg-blue-50">Proyectos</a>
+                <a href="#blog" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300 ease-in-out rounded-lg p-2 hover:bg-blue-50">Blog</a>
+            </div>
+            <!-- Botón de menú para móviles -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none focus:text-blue-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <!-- Menú móvil (oculto por defecto) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white py-2">
+            <a href="#inicio" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg">Inicio</a>
+            <a href="#experiencia" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg">Experiencia</a>
+            <a href="#educacion" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg">Educación</a>
+            <a href="#habilidades" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg">Habilidades</a>
+            <a href="#proyectos" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg">Proyectos</a>
+            <a href="#blog" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg">Blog</a>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio/Acerca de Mí -->
+    <section id="inicio" class="bg-gradient-to-r from-blue-500 to-blue-700 text-white text-center py-24 pt-32 rounded-b-xl shadow-lg">
+        <div class="container mx-auto px-4">
+            <img src="https://placehold.co/150x150/60a5fa/ffffff?text=DUQM" alt="Daan Uriel Quiroz Meza" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+            <h1 class="text-5xl font-extrabold mb-4 leading-tight">Daan Uriel Quiroz Meza</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Ingeniero en Comunicaciones y Electrónica con Diplomado en Gestión Profesional de Proyectos. Apasionado por la excelencia y con una mentalidad analítica, logrando resultados sobresalientes en entornos dinámicos y desafiantes.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="https://www.linkedin.com/in/daanmeza" target="_blank" class="btn-primary flex items-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg>
+                    <span>Mi LinkedIn</span>
+                </a>
+                <a href="#contacto" class="btn-primary flex items-center space-x-2 bg-blue-600 hover:bg-blue-800">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l7.89 5.26c.45.3 1.1.3 1.55 0L21 8m-18 0A2 2 0 013 6h18a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V8z"></path></svg>
+                    <span>Contacto</span>
+                </a>
+                <!-- Botón para descargar CV (ejemplo, no se descarga un archivo real aquí) -->
+                <a href="https://placehold.co/1x1/ffffff/ffffff?text=CV_Daan_Uriel_Quiroz_Meza" download="CV_Daan_Uriel_Quiroz_Meza.pdf" class="btn-primary flex items-center space-x-2 bg-gray-700 hover:bg-gray-900">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <span>Descargar CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia Profesional -->
+    <section id="experiencia" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Experiencia Profesional</h2>
+
+            <!-- Electronic Security Systems Design Engineer -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-gray-900">Electronic Security Systems Design Engineer</h3>
+                <p class="text-blue-600 text-lg">Prosegur Tecnología | Dic 2023 - Abr 2025</p>
+                <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                    <li>Lideré la concepción y desarrollo de soluciones avanzadas de seguridad para la protección de activos críticos.</li>
+                    <li>Desarrollé la integración de sistemas especializados y personalizados de CCTV, control de acceso, alarma y sistema de detección.</li>
+                    <li>Garanticé el cumplimiento normativo en cada desarrollo, maximizando la eficiencia operativa de cada equipo.</li>
+                    <li>Colaboré estrechamente con equipos multidisciplinarios y clientes para asegurar el correcto desarrollo de los proyectos.</li>
+                </ul>
+            </div>
+
+            <!-- Project Manager, Novigado Global -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-gray-900">Project Manager</h3>
+                <p class="text-blue-600 text-lg">Novigado Global | Ago 2023 - Nov 2023</p>
+                <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                    <li>Lideré equipos multifuncionales y gestioné proyectos complejos desde la concepción hasta la entrega exitosa.</li>
+                    <li>Planifiqué estratégicamente, para garantizar la ejecución eficiente de proyectos que superaron las expectativas de los clientes.</li>
+                    <li>Fomenté la coordinación interdepartamental y mantuve a todas las partes interesadas informadas a lo largo del ciclo de vida del proyecto.</li>
+                    <li>Combiné mi pasión por la excelencia con una mentalidad analítica, logrando resultados sobresalientes en un entorno dinámico y desafiante.</li>
+                </ul>
+            </div>
+
+            <!-- Presales Engineer, Novigado Global -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-gray-900">Presales Engineer</h3>
+                <p class="text-blue-600 text-lg">Novigado Global | Ago 2022 - Ago 2023</p>
+                <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                    <li>Asesoré a los clientes para que eligieran la solución que mejor se adaptara a sus necesidades.</li>
+                    <li>Proporcioné servicios de consultoría para diseñar soluciones tecnológicas.</li>
+                    <li>Diseñé soluciones llave en mano.</li>
+                    <li>Elaboré prototipos específicos para aplicaciones nuevas.</li>
+                    <li>Realicé la caracterización de sensores, llevé a cabo levantamientos de aplicación y creé diagramas de arquitectura general para los proyectos.</li>
+                    <li>Participé en licitaciones, elaboré cotizaciones, gestioné el presupuesto por proyecto y realicé seguimiento a los clientes.</li>
+                    <li>Representé a la empresa en negociaciones tanto a nivel de ventas como técnico.</li>
+                </ul>
+            </div>
+
+            <!-- Business Development and Project Manager, Six Graphics -->
+            <div class="card">
+                <h3 class="text-2xl font-semibold text-gray-900">Business Development and Project Manager</h3>
+                <p class="text-blue-600 text-lg">Six Graphics | Ago 2022 - Nov 2022</p>
+                <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                    <li>Gestioné proyectos enfocados en tecnología RFID.</li>
+                    <li>Diseñé y desarrollé aplicaciones para nuevas áreas de mercado, con especial énfasis en el control de almacenes, activos fijos, inventarios, control marítimo y seguimiento de vehículos.</li>
+                    <li>Resolví problemas de manera efectiva.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Educación -->
+    <section id="educacion" class="py-16 bg-f1f5f9">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Educación</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Diplomado en Gestión Profesional de Proyectos -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-900">Diplomado en Gestión Profesional de Proyectos</h3>
+                    <p class="text-blue-600 text-lg">Tecnológico de Monterrey</p>
+                    <p class="text-gray-600">Sep 2023 - Nov 2023</p>
+                </div>
+
+                <!-- Ingeniería en Comunicaciones y Electrónica -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-900">Ingeniería en Comunicaciones y Electrónica</h3>
+                    <p class="text-blue-600 text-lg">Instituto Politécnico Nacional</p>
+                    <p class="text-gray-600">Ago 2017 - Dic 2021</p>
+                </div>
+
+                <!-- Técnico Pasante en Máquinas y Sistemas Automatizados -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-900">Técnico Pasante en Máquinas y Sistemas Automatizados</h3>
+                    <p class="text-blue-600 text-lg">CECYT #2 IPN</p>
+                    <p class="text-gray-600">Ago 2014 - Jul 2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades y Certificaciones -->
+    <section id="habilidades" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Habilidades y Certificaciones</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Habilidades Técnicas -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Habilidades Técnicas</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>MS 365</li>
+                        <li>MS Project</li>
+                        <li>Visio</li>
+                        <li>Fusion 360</li>
+                        <li>AutoCad</li>
+                        <li>SolidWorks</li>
+                        <li>Axis Site Designer</li>
+                        <li>Milestone</li>
+                        <li>Genetec Synergis (Certificación)</li>
+                        <li>Genetec Omnicast (Certificación)</li>
+                        <li>Hanwha Toolbox</li>
+                        <li>Avigilon</li>
+                        <li>VMS Diversos</li>
+                    </ul>
+                </div>
+
+                <!-- Idiomas -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Idiomas</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Inglés Intermedio</li>
+                        <li>Visa turista B2 (vigente)</li>
+                    </ul>
+                </div>
+
+                <!-- Laboratorio y Habilidades Blandas -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Laboratorio y Habilidades Blandas</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>**Laboratorio:** Maquinaria y herramienta, instrumentos electrónicos de medición.</li>
+                        <li>**Habilidades Blandas:** Liderazgo, comunicación estratégica, gestión del tiempo, gestión de prioridades, pensamiento crítico, inteligencia emocional.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos / Portafolio (Contenido de ejemplo) -->
+    <section id="proyectos" class="py-16 bg-f1f5f9">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Proyectos Destacados</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyecto 1 -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/cbd5e1/475569?text=Proyecto+1" alt="Proyecto 1" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-gray-900">Diseño de Sistema de Seguridad Integrado</h3>
+                    <p class="text-gray-700 mt-2">Liderazgo en el diseño e implementación de una solución de seguridad integral para una infraestructura crítica, combinando CCTV avanzado, control de acceso biométrico y sistemas de detección de intrusiones. Mi rol incluyó la arquitectura de la solución y la supervisión técnica.</p>
+                    <p class="text-blue-600 text-sm mt-3">Tecnologías: Genetec Synergis, Omnicast, Avigilon, VMS Diversos</p>
+                    <a href="#" class="btn-primary mt-4 inline-block text-sm">Ver Detalles</a>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/cbd5e1/475569?text=Proyecto+2" alt="Proyecto 2" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-gray-900">Optimización de Inventarios con RFID</h3>
+                    <p class="text-gray-700 mt-2">Gestión de un proyecto para la implementación de tecnología RFID en un almacén logístico, resultando en una reducción del 30% en los tiempos de inventario y una mejora del 15% en la precisión del stock. Fui responsable de la planificación y ejecución del proyecto.</p>
+                    <p class="text-blue-600 text-sm mt-3">Tecnologías: RFID, MS Project</p>
+                    <a href="#" class="btn-primary mt-4 inline-block text-sm">Ver Detalles</a>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/cbd5e1/475569?text=Proyecto+3" alt="Proyecto 3" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-gray-900">Desarrollo de Prototipo para Control Marítimo</h3>
+                    <p class="text-gray-700 mt-2">Creación y desarrollo de un prototipo para el seguimiento y control de activos marítimos utilizando tecnologías emergentes. Este proyecto fue clave para la apertura de una nueva línea de negocio en Six Graphics.</p>
+                    <p class="text-blue-600 text-sm mt-3">Tecnologías: Fusion 360, Prototipado Rápido</p>
+                    <a href="#" class="btn-primary mt-4 inline-block text-sm">Ver Detalles</a>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-gray-600">Más proyectos y detalles estarán disponibles pronto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Blog / Aportaciones (Contenido de ejemplo) -->
+    <section id="blog" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Blog y Aportaciones</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Artículo 1 -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/cbd5e1/475569?text=Blog+1" alt="Blog Post 1" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-gray-900">Innovación en Sistemas de Seguridad Electrónica</h3>
+                    <p class="text-gray-700 mt-2 text-sm">Explorando las últimas tendencias y tecnologías en seguridad electrónica, desde la inteligencia artificial en videovigilancia hasta la biometría avanzada en control de acceso.</p>
+                    <p class="text-gray-500 text-xs mt-2">Publicado el 5 de Julio, 2025</p>
+                    <a href="#" class="btn-primary mt-4 inline-block text-sm">Leer Más</a>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/cbd5e1/475569?text=Blog+2" alt="Blog Post 2" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-gray-900">La Importancia de la Gestión de Proyectos en Tecnología</h3>
+                    <p class="text-gray-700 mt-2 text-sm">Un análisis sobre cómo una gestión de proyectos eficaz es crucial para el éxito de las implementaciones tecnológicas, minimizando riesgos y maximizando el retorno de inversión.</p>
+                    <p class="text-gray-500 text-xs mt-2">Publicado el 20 de Junio, 2025</p>
+                    <a href="#" class="btn-primary mt-4 inline-block text-sm">Leer Más</a>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="card">
+                    <img src="https://placehold.co/400x250/cbd5e1/475569?text=Blog+3" alt="Blog Post 3" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-gray-900">Desafíos y Oportunidades en la Transformación Digital</h3>
+                    <p class="text-gray-700 mt-2 text-sm">Discutiendo los principales retos que enfrentan las empresas en su camino hacia la digitalización y cómo superarlos para aprovechar las nuevas oportunidades.</p>
+                    <p class="text-gray-500 text-xs mt-2">Publicado el 1 de Junio, 2025</p>
+                    <a href="#" class="btn-primary mt-4 inline-block text-sm">Leer Más</a>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-gray-600">Más artículos y publicaciones se añadirán regularmente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto (en el pie de página) -->
+    <section id="contacto" class="bg-gray-800 text-white py-16 rounded-t-xl shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">Contáctame</h2>
+            <p class="text-lg mb-4">Estoy disponible para nuevas oportunidades y colaboraciones.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-8">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    <span>Enrique Bordes Mangel 4257, Asturias, Cuauhtemoc, CDMX</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.03 21 3 13.97 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z"></path></svg>
+                    <span>52 (55) 13 99 39 26</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                    <span>daanuriel@outlook.es</span>
+                </div>
+            </div>
+            <p class="text-sm text-gray-400">&copy; 2025 Daan Uriel Quiroz Meza. Todos los derechos reservados.</p>
+        </div>
+    </section>
+
+    <!-- Script para el menú móvil -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Ocultar menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
